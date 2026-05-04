@@ -1,0 +1,7 @@
+# Core MSA path-Hamiltonian code (msa_hamiltonian.py, run_msa_research_experiments.py)
+# uses only the Python standard library.
+#
+# The QUBO / Ising / QAOA extension and figures require:
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6

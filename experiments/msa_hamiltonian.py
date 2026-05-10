@@ -145,10 +145,10 @@ def path_to_alignment(sequences: Sequence[str], path: Sequence[Step]) -> tuple[s
 
         for seq_idx, advance in enumerate(step):
             if advance:
-                positions[seq_idx] += 1
-                if positions[seq_idx] > len(sequences[seq_idx]):
+                if positions[seq_idx] >= len(sequences[seq_idx]):
                     raise ValueError("path advances beyond sequence length")
                 rows[seq_idx].append(sequences[seq_idx][positions[seq_idx]])
+                positions[seq_idx] += 1
             else:
                 rows[seq_idx].append("-")
 

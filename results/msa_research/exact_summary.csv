@@ -1,0 +1,6 @@
+dataset,kind,k,lengths,states,score,energy,columns,time_seconds,alignment,description
+dna_three_sequence,DNA,3,6/5/6,294,22,-22,6,0.0046,ACGTAC | ACGT-C | ACTTAC,three short DNA sequences with one deletion and one substitution pattern
+protein_three_sequence,protein,3,7/7/6,448,28,-28,7,0.0061,MEEPQSD | MEESQSD | ME-PQSD,three short protein-like sequences with substitution/deletion ambiguity
+synthetic_four_sequence,DNA,4,8/8/7/9,6480,69,-69,9,0.2254,ACGTACGT- | ACGTTCGT- | ACG-ACGT- | ACGTACGTT,"four DNA sequences with substitution, deletion, and insertion"
+dna_four_gattaca,DNA,4,7/7/6/8,4032,45,-45,9,0.1359,G-ATTAC-A | GCAT-GC-A | G-AT-AC-A | G-ATTACCA,four DNA sequences derived from a common short motif
+dna_four_conserved_block,DNA,4,8/7/7/9,5760,60,-60,9,0.1968,TTACGTAA- | T-ACGTTA- | TTACGT-A- | TTACGTTAA,four DNA sequences sharing a conserved ACGT block

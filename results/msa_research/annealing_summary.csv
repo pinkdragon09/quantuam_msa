@@ -1,0 +1,9 @@
+dataset,config,trials,successes,success_rate,best_score,mean_score_gap,max_score_gap,mean_time_seconds
+dna_four_gattaca,medium,10,10,1.00,45,0.00,0,1.327
+dna_four_gattaca,small,10,5,0.50,45,1.50,3,0.247
+dna_three_sequence,medium,10,10,1.00,22,0.00,0,0.863
+dna_three_sequence,small,10,10,1.00,22,0.00,0,0.149
+protein_three_sequence,medium,10,10,1.00,28,0.00,0,0.959
+protein_three_sequence,small,10,10,1.00,28,0.00,0,0.169
+synthetic_four_sequence,medium,10,10,1.00,69,0.00,0,1.457
+synthetic_four_sequence,small,10,10,1.00,69,0.00,0,0.258

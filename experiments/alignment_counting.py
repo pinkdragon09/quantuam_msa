@@ -50,7 +50,7 @@ def delannoy(m: int, n: int) -> int:
 
     return sum(
         factorial(m + n - d) // (factorial(m - d) * factorial(n - d) * factorial(d))
-        for d in range(min(m, n))
+        for d in range(min(m, n) + 1)
     )
 
 

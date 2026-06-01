@@ -151,11 +151,11 @@ def anchor_plan(seq_a: str, seq_b: str, k: int, top_k: int = 4) -> AnchorPlan:
     """Find candidate DP diagonals using exact shared k-mer anchors."""
 
     positions_b: dict[str, list[int]] = defaultdict(list)
-    for j in range(max(0, len(seq_b) - k)):
+    for j in range(max(0, len(seq_b) - k + 1)):
         positions_b[seq_b[j : j + k]].append(j)
 
     counts: Counter[int] = Counter()
-    for i in range(max(0, len(seq_a) - k)):
+    for i in range(max(0, len(seq_a) - k + 1)):
         kmer = seq_a[i : i + k]
         for j in positions_b.get(kmer, []):
             counts[i - j] += 1

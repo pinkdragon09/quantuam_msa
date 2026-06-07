@@ -117,7 +117,7 @@ def main() -> None:
     rows = run()
 
     with (RESULT_DIR / "affine_blosum.csv").open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0])[:-1])
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
 

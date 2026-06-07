@@ -54,6 +54,8 @@ def blosum62(a: str, b: str) -> int:
             "blosum62 is a residue-residue score; gaps must be handled by the "
             "caller's gap penalty, not looked up in the substitution matrix"
         )
+    a = a.upper()
+    b = b.upper()
     if (a, b) in BLOSUM62:
         return BLOSUM62[(a, b)]
     a = a if (a, "A") in BLOSUM62 else "X"

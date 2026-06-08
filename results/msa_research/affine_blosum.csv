@@ -1,0 +1,9 @@
+instance,scheme,k,lengths,alignments_enumerated,brute_force_score,anneal_score,anneal_optimal,optimal_alignment
+dna_a,linear_identity,3,4/3/4,177489,16,16,yes,ACGT | AC-T | ACGT
+dna_a,affine_identity,3,4/3/4,177489,6,6,yes,ACGT | AC-T | ACGT
+dna_b,linear_identity,3,4/3/3,50191,8,8,yes,GATT | G-AT | G-TT
+dna_b,affine_identity,3,4/3/3,50191,-2,-2,yes,GATT | G-AT | G-TT
+prot_a,linear_blosum62,3,4/3/4,177489,47,47,yes,MEEP | ME-P | MESP
+prot_a,affine_blosum62,3,4/3/4,177489,27,27,yes,MEEP | ME-P | MESP
+prot_b,linear_blosum62,3,4/3/4,177489,57,57,yes,HEAG | HE-G | HEAG
+prot_b,affine_blosum62,3,4/3/4,177489,37,37,yes,HEAG | HE-G | HEAG

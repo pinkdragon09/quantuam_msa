@@ -156,7 +156,7 @@ def build_qubo(
     rewards = np.zeros(m, dtype=np.float64)
     for e, (tail, head, reward) in enumerate(edges):
         incidence[vertex_index[tail], e] += 1.0
-        incidence[vertex_index[head], e] += 1.0
+        incidence[vertex_index[head], e] -= 1.0
         rewards[e] = reward
 
     target = np.zeros(num_vertices, dtype=np.float64)

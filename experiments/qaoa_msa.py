@@ -55,7 +55,7 @@ def _apply_mixer(state: np.ndarray, beta: float, m: int) -> np.ndarray:
     sin_b = -1j * np.sin(beta)
     tensor = state.reshape([2] * m)
     for q in range(m):
-        axis = q
+        axis = m - 1 - q  # qubit 0 is least significant -> last tensor axis
         moved = np.moveaxis(tensor, axis, 0)
         zero, one = moved[0].copy(), moved[1].copy()
         moved[0] = cos_b * zero + sin_b * one

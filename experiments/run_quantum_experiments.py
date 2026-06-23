@@ -34,7 +34,7 @@ import qubo_msa  # noqa: E402
 import qaoa_msa  # noqa: E402
 
 RESULT_DIR = ROOT / "results" / "msa_research"
-FIG_DIR = ROOT / "figures"
+FIG_DIR = RESULT_DIR / "figures"
 QUANTUM_TABLES = RESULT_DIR / "msa_quantum_tables.tex"
 
 SCORING = msa.Scoring(match=2, mismatch=-1, gap=-2, gap_gap=0)
@@ -348,7 +348,7 @@ def make_figures(qaoa_rows, qaoa_meta, banded_rows, banded_meta, beyond_rows) ->
 def write_csv(path: Path, rows) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=sorted(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
 

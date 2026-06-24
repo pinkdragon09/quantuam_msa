@@ -1,0 +1,7 @@
+instance,k,lengths,qubits,penalty,ground_energy,dp_score,qubo_score,matches_dp,degeneracy,method
+pair_CA_A,2,2/1,9,18,0.0,0,0,yes,1,exact
+pair_AC_A,2,2/1,9,18,0.0,0,0,yes,1,exact
+pair_AT_AAT,2,2/3,23,44,-2.0,2,2,yes,-,anneal
+dna_two_ACG_AG,2,3/2,23,43,-2.0,2,2,yes,-,anneal
+dna_two_GATT_GAT,2,4/3,43,79,-4.0,4,4,yes,-,anneal
+dna_three_tiny,3,2/2/2,98,373,-6.0,6,6,yes,-,anneal

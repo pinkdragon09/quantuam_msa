@@ -1,0 +1,6 @@
+instance,qubits,depth_p,expected_cost,ground_energy,ground_probability,random_baseline,decoded_optimal
+k3_banded_ACGT_ACT_ACT,13,1,6.589,-14.0,0.009,0.0001,yes
+k3_banded_ACGT_ACT_ACT,13,2,-2.769,-14.0,0.040,0.0001,no
+k3_banded_ACGT_ACT_ACT,13,3,-8.451,-14.0,0.083,0.0001,no
+k3_banded_ACGT_ACT_ACT,13,4,-10.483,-14.0,0.123,0.0001,no
+k3_banded_ACGT_ACT_ACT,13,5,-10.634,-14.0,0.132,0.0001,yes

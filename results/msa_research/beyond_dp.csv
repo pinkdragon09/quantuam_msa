@@ -1,0 +1,6 @@
+family,k,lengths,lattice_states,dp_status,dp_score,dp_time_s,known_optimum,sa_score,sa_optimal,sa_time_s
+indel_k4_L8,4,8/8/8/7,5832,feasible,84,0.22,84,84,yes,2.77
+indel_k5_L8,5,8/8/8/8/7,52488,feasible,144,4.72,144,144,yes,3.49
+indel_k6_L8,6,8/8/8/8/8/7,472392,feasible,220,97.54,220,220,yes,4.28
+indel_k7_L8,7,8/8/8/8/8/8/7,4251528,not_run,-,-,312,312,yes,5.25
+indel_k8_L8,8,8/8/8/8/8/8/8/7,38263752,not_run,-,-,420,420,yes,6.34

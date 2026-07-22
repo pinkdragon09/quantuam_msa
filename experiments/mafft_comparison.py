@@ -74,7 +74,9 @@ def run_mafft(sequences, kind: str, mafft_bin: str) -> tuple[str, ...]:
             order.append(current)
         elif current is not None:
             rows[current].append(line.strip())
-    return tuple("".join(rows[name]).upper() for name in order)
+    # Reorder to the original s0, s1, ... input order.
+    indexed = sorted(order, key=lambda n: int(n[1:]))
+    return tuple("".join(rows[name]).upper() for name in indexed)
 
 
 def columns_agree(a: tuple[str, ...], b: tuple[str, ...]) -> bool:

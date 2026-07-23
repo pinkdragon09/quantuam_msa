@@ -1,0 +1,7 @@
+dataset,type,objective,our_optimum,mafft_score,score_gap,mafft_optimal,columns_identical,mafft_alignment,our_alignment
+dna_three_sequence,DNA,match/mismatch,22,22,0,yes,yes,ACGTAC | ACGT-C | ACTTAC,ACGTAC | ACGT-C | ACTTAC
+protein_three_sequence,protein,BLOSUM62,77,77,0,yes,no,MEEPQSD | MEESQSD | M-EPQSD,MEEPQSD | MEESQSD | ME-PQSD
+synthetic_four_sequence,DNA,match/mismatch,69,18,51,no,no,---ACGTACGT- | ---ACGTTCGT- | ACGACGT----- | ---ACGTACGTT,ACGTACGT- | ACGTTCGT- | ACG-ACGT- | ACGTACGTT
+dna_four_gattaca,DNA,match/mismatch,45,39,6,no,no,GATTAC-A | GCATGC-A | G-ATAC-A | GATTACCA,G-ATTAC-A | GCAT-GC-A | G-AT-AC-A | G-ATTACCA
+dna_four_conserved_block,DNA,match/mismatch,60,54,6,no,no,TTACGTAA- | -TACGTTA- | TTACGTA-- | TTACGTTAA,TTACGTAA- | T-ACGTTA- | TTACGT-A- | TTACGTTAA
+protein_HEAG,protein,BLOSUM62,168,168,0,yes,yes,HEAGAWGHEE | HEAGAWGHE- | HEAGAWGHEE,HEAGAWGHEE | HEAGAWGHE- | HEAGAWGHEE

@@ -43,6 +43,7 @@ python -m pip install -r requirements.txt
 ```
 
 The core path-Hamiltonian implementation uses only the Python standard library.
+NumPy, SciPy, and Matplotlib are needed for the QUBO/QAOA studies and figures.
 
 ## Verify the code
 

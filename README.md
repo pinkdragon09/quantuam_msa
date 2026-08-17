@@ -1,14 +1,43 @@
 # Quantum-Inspired Multiple Sequence Alignment
 
 This is the standalone code-and-results repository for a multiple sequence
-alignment (MSA) project. It formulates
-an MSA as a monotone path through a `k`-dimensional edit lattice, realizes the
-path objective as a Hamiltonian, and studies exact dynamic programming,
-simulated annealing, an explicit flow-conservation QUBO/Ising model, and QAOA.
+alignment (MSA) project. It formulates an MSA as a monotone path through a
+`k`-dimensional edit lattice, realizes the path objective as a Hamiltonian, and
+studies exact dynamic programming (DP), simulated annealing, an explicit
+flow-conservation quadratic unconstrained binary optimization (QUBO)
+formulation and its equivalent Ising spin-model representation, and the Quantum
+Approximate Optimization Algorithm (QAOA).
 
 The repository is intentionally limited to runnable research code, tests, and
-generated results. The application manuscript, literature PDFs, presentations,
-and videos live in the parent project and are not duplicated here.
+generated results. It excludes application manuscripts, literature files,
+presentations, and videos.
+
+## Terminology and abbreviations
+
+- **MSA — multiple sequence alignment:** inserting gaps into three or more
+  biological sequences so homologous or comparable symbols share columns.
+- **DP — dynamic programming:** an exact classical method that solves the MSA
+  problem by reusing optimal solutions for smaller edit-lattice states.
+- **QUBO — quadratic unconstrained binary optimization:** an objective written
+  as linear and quadratic terms in binary variables. Constraint penalties make
+  invalid edge selections more expensive than valid alignment paths.
+- **Ising model:** a mathematically equivalent spin representation of the QUBO.
+  It is named after physicist Ernst Ising and is not an acronym; binary variables
+  are replaced by spins with values `-1` or `+1`.
+- **QAOA — Quantum Approximate Optimization Algorithm:** a variational quantum
+  algorithm that alternates cost and mixing operations to concentrate
+  probability on low-energy QUBO/Ising states.
+- **BLOSUM62 — Blocks Substitution Matrix 62:** a protein substitution-scoring
+  matrix used to reward or penalize aligned amino-acid pairs.
+- **MAFFT — Multiple Alignment using Fast Fourier Transform:** an external MSA
+  program used here as a comparison method.
+- **DNA — deoxyribonucleic acid:** the sequence type used in the nucleotide
+  examples.
+- **CSV — comma-separated values:** the machine-readable result-table format.
+- **PNG — Portable Network Graphics; PDF — Portable Document Format:** the
+  raster-image and fixed-layout formats used for generated figures.
+- **TeX/LaTeX:** document-typesetting systems used for generated report tables;
+  these names are not acronyms in this context.
 
 ## Repository layout
 
@@ -25,9 +54,9 @@ experiments/
   mafft_comparison.py                optional comparison with external MAFFT
 tests/                                24 unit tests
 results/msa_research/
-  *.csv                               machine-readable experiment outputs
-  *.md                                human-readable summaries
-  *.tex                               generated LaTeX result tables
+  *.csv                               comma-separated-value experiment outputs
+  *.md                                human-readable Markdown summaries
+  *.tex                               generated LaTeX table sources
   figures/                            generated plots in PNG and PDF formats
 ```
 
